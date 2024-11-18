@@ -1,35 +1,32 @@
-import { Box, Flex, HStack, Button, Link, Spacer } from "@chakra-ui/react";
+import { Flex, HStack, Text } from "@chakra-ui/react";
+import { Button } from "./ui/button";
 
-const Navbar = () => {
+function Navbar() {
   return (
-    <Box as="header" bg="black" color="white" py={4} px={8}>
-      <Flex align="center">
-        <Box fontSize="xl" fontWeight="bold">
-          <Box as="span" color="cyan.400">
-            0x
-          </Box>{" "}
-          ENGINE LABS
-        </Box>
-        <Spacer />
-        <HStack gap={8}>
-          <Link href="#home" _hover={{ color: "cyan.400" }}>
-            Home
-          </Link>
-          <Link href="#services" _hover={{ color: "cyan.400" }}>
-            Our Services
-          </Link>
-          <Button
-            bg="cyan.400"
-            color="black"
-            _hover={{ bg: "cyan.300" }}
-            rounded="md"
-          >
-            Contact Us
-          </Button>
-        </HStack>
-      </Flex>
-    </Box>
+    <Flex justify="space-between" py={7}>
+      <HStack>
+        {/* logo here */}
+        <Text textTransform="uppercase" fontWeight="black" fontSize="lg">
+          <Text as="span" color="#02FFE4">
+            ox{" "}
+          </Text>
+          engine labs
+        </Text>
+      </HStack>
+
+      <HStack>
+        <Button color="#02FFE4" variant="outline">
+          Home
+        </Button>
+        <Button color="#ffffff" variant="outline">
+          Our services
+        </Button>
+        <Button bg="#02FFE4" variant="solid">
+          Contact us
+        </Button>
+      </HStack>
+    </Flex>
   );
-};
+}
 
 export default Navbar;
