@@ -12,7 +12,7 @@ function OurServices() {
   return (
     <Box bg="#000000" py={20} minH="100vh">
       <Container>
-        <Heading fontSize="6xl" mb={16}>
+        <Heading fontSize={["4xl", null, null, "6xl"]} mb={16}>
           Our Services
         </Heading>
 

@@ -1,10 +1,7 @@
 import { Box, Flex, HStack, Text } from "@chakra-ui/react";
 import Logo from "./logo";
 import Link from "next/link";
-import LinkedInIcon from "./icons/linked-in";
-import FacebookIcon from "./icons/facebook";
-import YoutubeIcon from "./icons/youtube";
-import InstagramIcon from "./icons/instagram";
+import Socials from "./socials";
 
 function Footer() {
   return (
@@ -17,12 +14,7 @@ function Footer() {
             <Logo />
           </Box>
 
-          <HStack fontSize="2xl" gap={6}>
-            <FacebookIcon />
-            <LinkedInIcon />
-            <YoutubeIcon />
-            <InstagramIcon />
-          </HStack>
+          <Socials />
         </Box>
 
         <Flex display={["none", null, null, "flex"]} direction="column" align="flex-end" gap={7}>

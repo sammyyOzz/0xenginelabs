@@ -1,9 +1,10 @@
 "use client"
 
-import { Flex, HStack } from "@chakra-ui/react";
+import { Box, Flex, HStack } from "@chakra-ui/react";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
 import Logo from "./logo";
+import Sidebar from "./sidebar";
 
 function Navbar() {
   const router = useRouter();
@@ -12,7 +13,7 @@ function Navbar() {
     <Flex justify="space-between" py={7}>
       <Logo />
 
-      <HStack>
+      <HStack display={["none", null, null, "flex"]}>
         <Button color="#02FFE4" variant="outline" onClick={() => router.push("/")}>
           Home
         </Button>
@@ -23,6 +24,10 @@ function Navbar() {
           Contact us
         </Button>
       </HStack>
+
+      <Box display={["block", null, null, "none"]}>
+       <Sidebar />
+      </Box>
     </Flex>
   );
 }
