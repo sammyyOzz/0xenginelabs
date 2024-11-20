@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Provider } from "@/components/ui/provider";
+import Navbar from "@/components/navbar";
+import Container from "@/components/ui/container";
+import { Box } from "@chakra-ui/react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,7 +43,14 @@ export default function RootLayout({
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Provider>{children}</Provider>
+        <Provider>
+          <Box bg="#000000" pb={20}>
+            <Container>
+              <Navbar />
+            </Container>
+          </Box>
+          {children}
+        </Provider>
       </body>
     </html>
   );

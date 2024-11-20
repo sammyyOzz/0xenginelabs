@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../ui/container";
-import Navbar from "../navbar";
 import { Box, Flex, HStack, Text, VStack } from "@chakra-ui/react";
 import { Button } from "../ui/button";
 
@@ -8,8 +7,6 @@ function HeroSection() {
   return (
     <Box as="section" bg="#000000" pb={60}>
       <Container>
-        <Navbar />
-
         <Flex gap="100px">
           <Box w="50%" pt={20}>
             <Text color="gray" textTransform="uppercase" fontSize="lg">
