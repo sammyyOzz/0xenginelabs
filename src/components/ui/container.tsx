@@ -3,6 +3,7 @@ import React from 'react'
 
 interface ContainerProps {
   children: React.ReactNode;
+  [anyProp: string]: any;
 }
 
 function Container({ children, ...props }: ContainerProps) {

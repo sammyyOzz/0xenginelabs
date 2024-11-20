@@ -1,6 +1,11 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import Container from "../ui/container";
+import IceBergCard from "../ice-berg-card";
+import softwareImage from "@/assets/images/software-dev.jpeg";
+import digitalImage from "@/assets/images/digital-transformation.jpeg";
+import businessImage from "@/assets/images/business-process.jpeg";
+import solutionsImage from "@/assets/images/software-solutions.jpeg";
 
 function IceBergSection() {
   return (
@@ -12,6 +17,39 @@ function IceBergSection() {
         <Text color="#000000" fontSize="6xl" fontWeight="black" mb={8}>
           Tip of the ice berg
         </Text>
+      </Container>
+      <Container maxW="1920px">
+        <Flex gap={2}>
+          <IceBergCard
+            imageUrl={softwareImage}
+            title="Custom Software Development"
+            subtitle={
+              "Tailored software to meet unique business needs, ensuring optimized performance and seamless integration"
+            }
+          />
+          <IceBergCard
+            imageUrl={digitalImage}
+            title={"Digital Transformation Consulting"}
+            subtitle={
+              "Strategic guidance for integrating modern technologies to enhance business processes and drive innovation"
+            }
+          />
+          <IceBergCard
+            imageUrl={solutionsImage}
+            title={"custom software solutions"}
+            subtitle={
+              "Bespoke software designed to fulfill specific business requirements, enhancing efficiency and functionality."
+            }
+          />
+          <IceBergCard
+            imageUrl={businessImage}
+            title={"business process automation"}
+            subtitle={
+              "Streamlining operations through automated workflows to improve efficiency and reduce manual tasks."
+            }
+          />
+          <Box bg="red" flex={1} borderRadius="0 30px 30px 0"></Box>
+        </Flex>
       </Container>
     </Box>
   );
