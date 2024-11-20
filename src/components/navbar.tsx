@@ -1,23 +1,16 @@
 "use client"
 
-import { Flex, HStack, Text } from "@chakra-ui/react";
+import { Flex, HStack } from "@chakra-ui/react";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
+import Logo from "./logo";
 
 function Navbar() {
   const router = useRouter();
 
   return (
     <Flex justify="space-between" py={7}>
-      <HStack>
-        {/* logo here */}
-        <Text textTransform="uppercase" fontWeight="black" fontSize="lg">
-          <Text as="span" color="#02FFE4">
-            ox{" "}
-          </Text>
-          engine labs
-        </Text>
-      </HStack>
+      <Logo />
 
       <HStack>
         <Button color="#02FFE4" variant="outline" onClick={() => router.push("/")}>

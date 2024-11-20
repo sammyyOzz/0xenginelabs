@@ -6,6 +6,7 @@ import digitalImage from "@/assets/images/digital-transformation.jpeg";
 import businessImage from "@/assets/images/business-process.jpeg";
 import solutionsImage from "@/assets/images/software-solutions.jpeg";
 import blockchainImage from "@/assets/images/blockchain.jpeg";
+import Footer from "@/components/footer";
 
 function OurServices() {
   return (
@@ -164,6 +165,8 @@ function OurServices() {
             digital economy.
           </Text>
         </ServicesCard>
+
+        <Footer />
       </Container>
     </Box>
   );

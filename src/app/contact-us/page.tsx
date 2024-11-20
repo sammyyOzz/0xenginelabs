@@ -1,4 +1,5 @@
 import ContactUsForm from "@/components/contact-us-form";
+import Footer from "@/components/footer";
 import Container from "@/components/ui/container";
 import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 
@@ -18,6 +19,7 @@ function ContactUs() {
           </Box>
           <Box bg="#ffffff"></Box>
         </SimpleGrid>
+        <Footer />
       </Container>
     </Box>
   );
