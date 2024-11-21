@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Image from "next/image";
 import xammColor from "@/assets/images/xamm-color.png";
 import xammBlack from "@/assets/images/xamm-black.png";

@@ -2,8 +2,8 @@ import React from "react";
 import Container from "../ui/container";
 import { Box, Flex, HStack, Text, VStack } from "@chakra-ui/react";
 import { Button } from "../ui/button";
-import plantImage from "@/assets/images/green-plant.jpeg"
-import Image from "next/image";
+// import plantImage from "@/assets/images/green-plant.jpeg"
+// import Image from "next/image";
 
 function HeroSection() {
   return (
@@ -47,7 +47,7 @@ function HeroSection() {
           </Box>
 
           <Box w={["100%", null, null, "50%"]} display={["none", null, null, "block"]} pos="relative">
-            <Image src={plantImage} alt="green plant" fill />
+            {/* <Image src={plantImage} alt="green plant" fill /> */}
           </Box>
         </Flex>
       </Container>

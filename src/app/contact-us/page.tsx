@@ -10,7 +10,7 @@ function ContactUs() {
         <SimpleGrid columns={[1, null, null, 2]} gap={10}>
           <Box>
             <Text color="gray" textTransform="uppercase" fontSize="lg">
-              we'd like to hear from you
+              we would like to hear from you
             </Text>
             <Text fontSize="6xl" fontWeight="black" mb={8}>
               Contact us
