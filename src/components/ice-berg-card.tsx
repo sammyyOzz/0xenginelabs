@@ -82,7 +82,7 @@ function IceBergCard({ imageUrl, title, subtitle, id }: IceBergCardProps) {
           fontSize="lg"
           opacity={0}
           transition="200ms linear all"
-          display={["none", null, null, "block"]}
+          display={["none", null, null, null, null, "block"]}
         >
           {subtitle}
         </Text>

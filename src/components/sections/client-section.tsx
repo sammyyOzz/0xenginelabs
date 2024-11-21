@@ -7,11 +7,11 @@ import ClientsDesktop from "../clients-desktop";
 
 function ClientSection() {
   return (
-    <Box as="section" bg="#ffffff" py={40}>
+    <Box as="section" bg="#ffffff" pt={40}>
       <Container>
         <SettingsIcon fontSize="90px" />
 
-        <Flex gap="100px" direction={["column", null, null, "row"]}>
+        <Flex gap="30px" direction={["column", null, null, "row"]}>
           <Box w={["100%", null, null, "50%"]} pt={20} pb={[0, null, null, 40]}>
             <Text color="gray" textTransform="uppercase" fontSize="lg">
               here are
@@ -31,7 +31,7 @@ function ClientSection() {
             </Button>
           </Box>
 
-          <Box w={["100%", null, null, "50%"]} pos="relative" border="1px solid red">
+          <Box w={["100%", null, null, "50%"]} aspectRatio={1} pos="relative">
             <ClientsDesktop />
           </Box>
         </Flex>

@@ -17,7 +17,7 @@ function ClientsDesktop() {
       <Box
         zIndex={3}
         pos="absolute"
-        w="45%"
+        w="38%"
         boxShadow="0 0 20px #9c9b9b"
         bg="#ffffff"
         aspectRatio={1 / 1.7}
@@ -68,10 +68,10 @@ function ClientsDesktop() {
         zIndex={2}
         pos="absolute"
         top="200px"
-        left="250px"
+        left="32%"
         boxShadow="0 0 20px #9c9b9b"
         bg="#ffffff"
-        w="45%"
+        w="38%"
         aspectRatio={1 / 1.7}
         transition="200ms linear all"
         overflow="hidden"
@@ -85,14 +85,14 @@ function ClientsDesktop() {
           },
           "& .myrkle-spark-left": {
             pos: "absolute",
-            bottom: "70px",
-            left: "-50%",
+            bottom: ["30px", null, null, "70px"],
+            left: "-100%",
             transition: "200ms linear all",
           },
           "& .myrkle-spark-right": {
             pos: "absolute",
-            bottom: "70px",
-            right: "-50%",
+            bottom: ["30px", null, null, "70px"],
+            right: "-100%",
             transition: "200ms linear all",
           },
         }}
@@ -106,15 +106,15 @@ function ClientsDesktop() {
             transition: "200ms linear all",
           },
           "& .myrkle-color": {
-            transform: "scale(1.5)",
+            transform: ["scale(1)", null, null, "scale(1.5)"],
             opacity: 1
           },
           "& .myrkle-spark-left": {
-            left: 0,
+            left: ["-90px", null, null, 0],
             transition: "200ms linear all",
           },
           "& .myrkle-spark-right": {
-            right: 0,
+            right: ["-90px", null, null, 0],
             transition: "200ms linear all",
           },
         }}
@@ -144,10 +144,10 @@ function ClientsDesktop() {
         zIndex={1}
         pos="absolute"
         top="100px"
-        left="500px"
+        left="62%"
         boxShadow="0 0 20px #9c9b9b"
         bg="#ffffff"
-        w="45%"
+        w="38%"
         aspectRatio={1 / 1.7}
         transition="200ms linear all"
         overflow="hidden"
