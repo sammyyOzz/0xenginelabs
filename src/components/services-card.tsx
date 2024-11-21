@@ -5,11 +5,12 @@ interface ServicesCardProps {
   imageUrl: StaticImageData;
   title: string;
   children: React.ReactNode;
+  id?: string;
 }
 
-function ServicesCard({ imageUrl, title, children }: ServicesCardProps) {
+function ServicesCard({ imageUrl, title, children, id }: ServicesCardProps) {
   return (
-    <Flex gap={20} mb={20} direction={["column", null, null, "row"]}>
+    <Flex id={id} gap={20} mb={20} direction={["column", null, null, "row"]}>
       <Box
         w={["100%", null, null, "20%"]}
         aspectRatio={[1, null, null, "none"]}

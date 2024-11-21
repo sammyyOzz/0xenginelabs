@@ -6,6 +6,12 @@ import softwareImage from "@/assets/images/software-dev.jpeg";
 import digitalImage from "@/assets/images/digital-transformation.jpeg";
 import businessImage from "@/assets/images/business-process.jpeg";
 import solutionsImage from "@/assets/images/software-solutions.jpeg";
+import {
+  businessProcessAutomatonId,
+  customSoftwareDevelopmentId,
+  customSofwareSolutionsId,
+  digitalTransformationConsultingId,
+} from "@/constants";
 
 function IceBergSection() {
   return (
@@ -21,6 +27,7 @@ function IceBergSection() {
       <Container maxW="1920px">
         <Flex gap={2}>
           <IceBergCard
+            id={customSoftwareDevelopmentId}
             imageUrl={softwareImage}
             title="Custom Software Development"
             subtitle={
@@ -28,6 +35,7 @@ function IceBergSection() {
             }
           />
           <IceBergCard
+            id={digitalTransformationConsultingId}
             imageUrl={digitalImage}
             title={"Digital Transformation Consulting"}
             subtitle={
@@ -35,6 +43,7 @@ function IceBergSection() {
             }
           />
           <IceBergCard
+            id={customSofwareSolutionsId}
             imageUrl={solutionsImage}
             title={"custom software solutions"}
             subtitle={
@@ -42,6 +51,7 @@ function IceBergSection() {
             }
           />
           <IceBergCard
+            id={businessProcessAutomatonId}
             imageUrl={businessImage}
             title={"business process automation"}
             subtitle={

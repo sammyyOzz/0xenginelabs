@@ -1,13 +1,19 @@
+"use client";
+
 import { Box, Text } from "@chakra-ui/react";
 import Image, { StaticImageData } from "next/image";
+import { useRouter } from "next/navigation";
 
 interface IceBergCardProps {
   imageUrl: StaticImageData;
   title: string;
   subtitle: string;
+  id: string;
 }
 
-function IceBergCard({ imageUrl, title, subtitle }: IceBergCardProps) {
+function IceBergCard({ imageUrl, title, subtitle, id }: IceBergCardProps) {
+  const router = useRouter();
+
   return (
     <Box
       pos="relative"
@@ -33,6 +39,7 @@ function IceBergCard({ imageUrl, title, subtitle }: IceBergCardProps) {
         },
       }}
       cursor="pointer"
+      onClick={() => router.push(`/our-services#${id}`)}
     >
       <Image src={imageUrl} fill alt="" />
       <Box

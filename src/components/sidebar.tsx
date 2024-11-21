@@ -1,4 +1,5 @@
 import {
+  DrawerCloseTrigger,
   DrawerBackdrop,
   DrawerBody,
   DrawerContent,
@@ -7,7 +8,7 @@ import {
   DrawerRoot,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
+} from "@/components/ui/drawer";
 import { Flex, IconButton, Text } from "@chakra-ui/react";
 import HamburgerMenuIcon from "./icons/hamburger-menu";
 import Socials from "./socials";
@@ -31,15 +32,27 @@ function Sidebar() {
         </DrawerHeader>
         <DrawerBody>
           <Flex direction="column" align="flex-end" gap={10} pt={40}>
-            <Link href="/">
-              <Text as="span" fontSize="lg" fontWeight="bold">Home</Text>
-            </Link>
-            <Link href="/our-services">
-              <Text as="span" fontSize="lg" fontWeight="bold">Our services</Text>
-            </Link>
-            <Link href="/contact-us">
-              <Text as="span" fontSize="lg" fontWeight="bold">Contact us</Text>
-            </Link>
+            <DrawerCloseTrigger pos="static">
+              <Link href="/">
+                <Text as="span" fontSize="lg" fontWeight="bold">
+                  Home
+                </Text>
+              </Link>
+            </DrawerCloseTrigger>
+            <DrawerCloseTrigger pos="static">
+              <Link href="/our-services">
+                <Text as="span" fontSize="lg" fontWeight="bold">
+                  Our services
+                </Text>
+              </Link>
+            </DrawerCloseTrigger>
+            <DrawerCloseTrigger pos="static">
+              <Link href="/contact-us">
+                <Text as="span" fontSize="lg" fontWeight="bold">
+                  Contact us
+                </Text>
+              </Link>
+            </DrawerCloseTrigger>
           </Flex>
         </DrawerBody>
         <DrawerFooter>
@@ -47,7 +60,7 @@ function Sidebar() {
         </DrawerFooter>
       </DrawerContent>
     </DrawerRoot>
-  )
+  );
 }
 
 export default Sidebar;

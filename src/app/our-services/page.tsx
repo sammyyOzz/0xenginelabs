@@ -7,6 +7,12 @@ import businessImage from "@/assets/images/business-process.jpeg";
 import solutionsImage from "@/assets/images/software-solutions.jpeg";
 import blockchainImage from "@/assets/images/blockchain.jpeg";
 import Footer from "@/components/footer";
+import {
+  businessProcessAutomatonId,
+  customSoftwareDevelopmentId,
+  customSofwareSolutionsId,
+  digitalTransformationConsultingId,
+} from "@/constants";
 
 function OurServices() {
   return (
@@ -17,6 +23,7 @@ function OurServices() {
         </Heading>
 
         <ServicesCard
+          id={customSoftwareDevelopmentId}
           title="custom software development"
           imageUrl={softwareImage}
         >
@@ -48,6 +55,7 @@ function OurServices() {
         </ServicesCard>
 
         <ServicesCard
+          id={digitalTransformationConsultingId}
           title="digital transformation consulting"
           imageUrl={digitalImage}
         >
@@ -79,6 +87,7 @@ function OurServices() {
         </ServicesCard>
 
         <ServicesCard
+          id={customSofwareSolutionsId}
           title="custom software solutions"
           imageUrl={solutionsImage}
         >
@@ -108,6 +117,7 @@ function OurServices() {
         </ServicesCard>
 
         <ServicesCard
+          id={businessProcessAutomatonId}
           title="business process automation"
           imageUrl={businessImage}
         >
