@@ -25,7 +25,7 @@ function IceBergSection() {
         </Text>
       </Container>
       <Container maxW="1920px">
-        <Flex gap={2}>
+        <Flex gap={[5, null, null, 2]} direction={["column", null, null, "row"]}>
           <IceBergCard
             id={customSoftwareDevelopmentId}
             imageUrl={softwareImage}
@@ -58,7 +58,7 @@ function IceBergSection() {
               "Streamlining operations through automated workflows to improve efficiency and reduce manual tasks."
             }
           />
-          <Box bg="red" flex={1} borderRadius="0 30px 30px 0"></Box>
+          <Box bg="red" flex={1} borderRadius="0 30px 30px 0" display={["none", null, null, "block"]}></Box>
         </Flex>
       </Container>
     </Box>
